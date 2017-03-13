@@ -1,0 +1,21 @@
+<!-- vista editar menu -->
+
+ <!-- titulo  -->
+<div class="container">
+	<div class="thumbnail">
+		<h1>Editar Almuerzo</h1>
+	</div>
+</div>
+
+<!-- Formulario -->	
+<div class=" container">
+	<div class="thumbnail">
+		<%= render 'form' %>
+	</div>
+	<!-- boton volver y show  -->
+	<button type="button" class="btn">
+			<%= link_to 'Show', @almuerzo %> |
+			<%= link_to 'Volver', almuerzos_path %>
+	</button>		
+</div>	
+

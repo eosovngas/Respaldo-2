@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>Listado de Almuerzos</h1>
+  </div>  
+</div>
+  
+  <% @almuerzos.each do |almuerzo| %>
+    <div class= "container">
+     <div class="col-md-4"> 
+       <div class= "thumbnail">
+        <h2> <%= almuerzo.nombre %> </h2>
+        <%= image_tag(almuerzo.foto, width:"400", :class => 'img-responsive') %>
+        <p> <strong> Menú: </strong> <%= almuerzo.descripcion %> </p>
+        <p> <strong> Precio: </strong> $<%= almuerzo.precio %> </p>
+        <p> <strong> Stock: </strong> <%= almuerzo.stock %> unidades </p>
+          <!-- Validando botones  -->
+          <% if current_user.try(:admin? ) %> 
+          <button type="button" class="btn"> 
+            <%= link_to 'Show', almuerzo %>
+          </button>  
+          <button type="button" class="btn">
+            <%= link_to 'Editar Menú', edit_almuerzo_path(almuerzo) %>
+          </button>
+          <button type="button" class="btn">
+            <%= link_to 'Eliminar Menú', almuerzo, method: :delete, data: { confirm: 'Estas seguro?' } %>
+          </button>
+          <% end %>
+
+
+          <% if user_signed_in? %>
+          <button type="button" class="btn">
+            <%= link_to 'Comprar Menú', almuerzo, method: :comprar, data: { confirm: 'Estas seguro?' } %>
+          </button>
+          <% end %>
+
+     </div>
+    </div>       
+
+    <% end %>
+<br>
+  <!-- validando botones  -->
+  <% if user_signed_in? %> 
+  <button type="button" class="btn"> 
+    <%= link_to 'Crear nuevo Almuerzo', new_almuerzo_path %>
+  </button>
+  <% end %> 

@@ -1,0 +1,89 @@
+commit 3ff1e00132664374052d27dc784a17ca7979730c
+Author: Eduardo <e.osoriovenegas@gmail.com>
+Date:   Fri Mar 10 18:52:04 2017 -0300
+
+    configuracion del mail device
+
+commit f0a2aa4d05dd3c7e1594886c148d181424dd8df1
+Author: Eduardo <e.osoriovenegas@gmail.com>
+Date:   Fri Mar 10 18:09:51 2017 -0300
+
+    configuracion del formulario editar usuarios y validaciones
+
+commit 7f1a3aedad65bb985211bf8c2f27ad040a1d86eb
+Author: Eduardo <e.osoriovenegas@gmail.com>
+Date:   Fri Mar 10 14:36:06 2017 -0300
+
+    cambiando el nombre a los links
+
+commit 6aa5d31ebf460b113b0add6f5e4aad2d738f6ba4
+Author: Eduardo <e.osoriovenegas@gmail.com>
+Date:   Fri Mar 10 14:08:20 2017 -0300
+
+    actualizacion del formulario de registro, parametros fuertes habilitados
+
+commit ec4e1c9160511d65cc09381a2d108dbb7e351695
+Author: Eduardo <e.osoriovenegas@gmail.com>
+Date:   Fri Mar 10 12:57:56 2017 -0300
+
+    creacion de las migraciones en la tabla user phone,nombre,tienda
+
+commit e37ff1210e2f30c9e2644fae9942f7b8e2a6b8b7
+Author: Eduardo <e.osoriovenegas@gmail.com>
+Date:   Tue Feb 21 07:41:01 2017 -0300
+
+    validando datos del formulario de almuerzo, bloqueando acceso a usuarios ala pagina almuerzo (deben loguearse),  modificacion de las vistas de devise iniciar sesion y registro, creacion del login y logout
+
+commit 6fe9a7d33915a157299d1c2845d8c4ab45b63400
+Author: Eduardo <e.osoriovenegas@gmail.com>
+Date:   Tue Feb 21 05:45:46 2017 -0300
+
+    implementando la gema devise
+
+commit 33ba09ce632e361d9d62c2f02a75ede5276b1dd5
+Author: Eduardo <e.osoriovenegas@gmail.com>
+Date:   Tue Feb 21 05:18:34 2017 -0300
+
+    instalacion de la gema devise
+
+commit 4bb8e4e6a6beec416f79304c27c3ffd1354c2deb
+Author: Eduardo <e.osoriovenegas@gmail.com>
+Date:   Tue Feb 21 05:14:23 2017 -0300
+
+    modificacion de las vistas de scaffold/almuerzo, validacion de datos en el formulario
+
+commit efa18d20f6d14a92ce4566c358725d2af8aeea90
+Author: Eduardo <e.osoriovenegas@gmail.com>
+Date:   Mon Feb 20 21:59:34 2017 -0300
+
+    creacion scaffold almuerzo
+
+commit 64c834ba7a7db17d5fac3d53fb9173e8a2b2ffe5
+Author: Eduardo <e.osoriovenegas@gmail.com>
+Date:   Mon Feb 20 14:47:31 2017 -0300
+
+    modificacion de las rutas de los controladores
+
+commit 60850dd3609a2364533ad2e2a5465fac131a25c1
+Author: Eduardo <e.osoriovenegas@gmail.com>
+Date:   Mon Feb 20 14:42:37 2017 -0300
+
+    creacion del controller login/logueo, registrar/usuarios
+
+commit e4e112110d23cfc01526fe178df8b7ae81c03fcd
+Author: Eduardo <e.osoriovenegas@gmail.com>
+Date:   Mon Feb 20 14:40:24 2017 -0300
+
+    creacion de la pagina de inicio, instalacion de bootstrap, instalacion de plantilla cerulean
+
+commit b04d0b7b656ab111902d15476c312483b0c320f0
+Author: Eduardo <e.osoriovenegas@gmail.com>
+Date:   Mon Feb 20 14:34:04 2017 -0300
+
+    creacion del controller welcome/index
+
+commit a519fe857f090bdc742609fde6427a0f0def4a25
+Author: Eduardo <e.osoriovenegas@gmail.com>
+Date:   Mon Feb 20 14:29:25 2017 -0300
+
+    creacion del proyecto Almuerzo-Flash

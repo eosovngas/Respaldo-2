@@ -1,0 +1,41 @@
+<%= form_for(@almuerzo) do |f| %>
+  <% if @almuerzo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@almuerzo.errors.count, "error") %> prohibited this almuerzo from being saved:</h2>
+
+      <ul>
+      <% @almuerzo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<!-- Formulario de creacion de menu -->
+<div class="form-group">
+  <div class="field">
+    <%= f.label :foto %><br>
+    <%= f.text_field :foto , :class => 'form-control', :placeholder => 'Url del Almuerzo' %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre, :class => 'form-control', :placeholder => 'Nombre del Almuerzo' %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcion %><br>
+    <%= f.text_area :descripcion, :class => 'form-control', :placeholder => 'Descripcion del Almuerzo'%>
+  </div>
+  <div class="field">
+    <%= f.label :precio %><br>
+    <%= f.number_field :precio, :class => 'form-control',:placeholder => 'Precio del Almuerzo' %>
+  </div>
+  <div class="field">
+    <%= f.label :stock %><br>
+    <%= f.number_field :stock, :class => 'form-control', :placeholder => 'Stock del Almuerzo' %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Crear", :class =>' btn btn-primary' %>
+  </div>
+</div>
+
+<% end %>

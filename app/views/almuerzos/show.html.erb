@@ -1,0 +1,36 @@
+<!-- vista show  -->
+<p id="notice"><%= notice %></p>
+
+<dev class="container">
+  <dev class="thumbnail">
+   <p>
+      <strong>Foto:</strong>
+       <%= image_tag (@almuerzo.foto) %>
+    </p>
+
+    <p>
+      <strong>Nombre:</strong>
+      <%= @almuerzo.nombre %>
+    </p>
+
+    <p>
+      <strong>Descripcion:</strong>
+      <%= @almuerzo.descripcion %>
+    </p>
+
+    <p>
+      <strong>Precio:</strong>
+      <%= @almuerzo.precio %>
+    </p>
+
+    <p>
+      <strong>Stock:</strong>
+      <%= @almuerzo.stock %>
+    </p>
+  </dev> 
+</dev>
+
+<button type="button" class="btn">
+  <%= link_to 'Editar', edit_almuerzo_path(@almuerzo) %> |
+  <%= link_to 'Volver', almuerzos_path %>
+</button>

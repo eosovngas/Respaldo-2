@@ -1,0 +1,1 @@
+json.array! @almuerzos, partial: 'almuerzos/almuerzo', as: :almuerzo

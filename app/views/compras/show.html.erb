@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @compra.user_id %>
+</p>
+
+<p>
+  <strong>Almuerzo:</strong>
+  <%= @compra.almuerzo_id %>
+</p>
+
+<%= link_to 'Edit', edit_compra_path(@compra) %> |
+<%= link_to 'Back', compras_path %>
