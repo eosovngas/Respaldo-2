@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   resources :compras
   devise_for :users
   resources :almuerzos
+  resources :users ,:only =>[:show,:delete]
+
   get 'registrar/usuarios'
   get 'login/logueo'
   get 'welcome/index'

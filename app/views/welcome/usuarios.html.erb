@@ -1,0 +1,25 @@
+
+<br>
+<table align="center" border=1 bgcolor="white">
+<tr>
+<td>Id Usuarios</td>
+<td>Nombre</td>
+<td>Correo</td>
+<td>Ultima sesion</td>
+<td>Eliminar</td>
+</tr>
+<% @users.order(:id).each do|user| %>
+<tr>
+	<td><%=user.id%></td>
+	<td><%=user.nombre%></td>
+	<td><%=user.email%></td>
+	<td><%=user.last_sign_in_at%></td>
+	<td align="center"><%=link_to "Eliminar" , user,method: :delete, data: { confirm: 'Estas seguro' }  %></td>
+</tr>
+
+	<%end%>
+</table>
+<br>
+<center>
+</input>
+</center>

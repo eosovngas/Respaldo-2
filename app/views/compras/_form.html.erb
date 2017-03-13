@@ -10,14 +10,9 @@
       </ul>
     </div>
   <% end %>
-
+  
   <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
-  </div>
-  <div class="field">
-    <%= f.label :almuerzo_id %><br>
-    <%= f.number_field :almuerzo_id %>
+    <%= f.collection_select  :almuerzo_id,Almuerzo.order(:nombre),:id,:nombre,prompt: "Seleccione Almuerzo"%>
   </div>
   <div class="actions">
     <%= f.submit %>

@@ -1,6 +1,5 @@
 class ComprasController < ApplicationController
-  before_action :set_compra, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!, :set_compra, only: [:show, :edit, :update, :destroy]
   # GET /compras
   # GET /compras.json
   def index
@@ -24,7 +23,7 @@ class ComprasController < ApplicationController
   # POST /compras
   # POST /compras.json
   def create
-    @compra = Compra.new(compra_params)
+    @compra = current_user.compras.new(compra_params)
 
     respond_to do |format|
       if @compra.save

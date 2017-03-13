@@ -1,4 +1,7 @@
 class Almuerzo < ActiveRecord::Base
+
+	has_many :compras
+
 	validates :foto, presence:true
 	validates :nombre, presence:true, uniqueness:true, length: { minunum:15, maximum: 60}, format: { with: /\A[a-zA-Z]+\z/ ,:message => "no valido" }
 	validates :descripcion, presence:true, length:{ minunum: 10, maximum:100,:message => "no valido"}
